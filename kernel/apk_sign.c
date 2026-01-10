@@ -236,7 +236,7 @@ static __always_inline bool check_v2_signature(char *path,
 	bool v3_signing_exist = false;
 	bool v3_1_signing_exist = false;
 
-	int i;
+	//int i;
 	struct file *fp = ksu_filp_open_compat(path, O_RDONLY, 0);
 	if (IS_ERR(fp)) {
 		pr_err("open %s error.\n", path);
